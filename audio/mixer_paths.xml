@@ -1551,6 +1551,16 @@
 
     <path name="voice-dmic-ef">
         <path name="dmic-endfire" />
+        <path name="speaker-dmic-endfire" />
+    	<ctl name="ADC3 Volume" value="13" />
+    	<ctl name="ADC4 Volume" value="8" />
+	    <ctl name="DEC3 Volume" value="84" />
+	    <ctl name="DEC4 Volume" value="84" />
+    </path>
+
+    <!--wangdongdong.AudioDrv,14001 camcorder use dual mic-->
+    <path name="camcorder-mic">
+        <path name="handset-stereo-dmic-ef" />
     </path>
 
     <path name="voice-speaker-dmic-ef">
