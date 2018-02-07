@@ -353,12 +353,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# facelock properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.facelock.black_timeout=700 \
-    ro.facelock.det_timeout=2500 \
-    ro.facelock.rec_timeout=3500 \
-    ro.facelock.est_max_time=600
+# TextClassifier smart selection model files
+PRODUCT_PACKAGES += \
+    textclassifier.smartselection.bundle1
 
 # call dalvik heap config
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
