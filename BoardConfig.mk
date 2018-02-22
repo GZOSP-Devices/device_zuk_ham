@@ -216,9 +216,6 @@ PROTOBUF_SUPPORTED := true
 # ANT+ - TODO: Confirm this - TODO: Confirm this - TODO: Confirm this - TODO: Confirm this
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
-# Missing Dependencies
-ALLOW_MISSING_DEPENDENCIES=true
-
 #Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
@@ -229,6 +226,12 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 DONT_DEXPREOPT_PREBUILTS := true
+
+# Use Snapdragon LLVM Compiler
+TARGET_USE_SDCLANG := true
+
+# Extended filesystem support
+TARGET_KERNEL_HAVE_EXFAT := true
 
 # SELinux policies
 # qcom sepolicy
