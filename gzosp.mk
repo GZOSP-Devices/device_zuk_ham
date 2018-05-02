@@ -22,6 +22,7 @@ $(call inherit-product, device/zuk/ham/ham.mk)
 # Inherit some common  stuff.
 $(call inherit-product, vendor/gzosp/config/common_full_phone.mk)
 $(call inherit-product, vendor/gzosp/config/caf_fw.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/treble_common.mk)
 
 PRODUCT_NAME := gzosp_ham
 PRODUCT_DEVICE := ham
