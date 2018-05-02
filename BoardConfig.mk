@@ -218,6 +218,9 @@ BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 # Missing Dependencies
 ALLOW_MISSING_DEPENDENCIES=true
 
+# Treble
+PRODUCT_VENDOR_MOVE_ENABLED := true
+
 #Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
