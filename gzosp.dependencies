@@ -1,0 +1,12 @@
+[
+  {
+    "repository": "GZR-Kernels/kernel_cyanogen_msm8974",
+    "target_path": "kernel/cyanogen/msm8974",
+    "branch": "9.0"
+  },
+  {
+    "repository": "BigTopKrazies/proprietary_vendor_zuk",
+    "target_path": "vendor/zuk",
+    "branch": "9.0"
+  }
+]
